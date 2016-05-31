@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+
+	@font-face {
+  		font-family: 'Crimson Text';
+  		src: url('assets/fonts/crimsontext/CrimsonText-Regular.ttf');
+	}
+
+	@font-face {
+  		font-family: 'Yeseva One';
+  		src: url('assets/fonts/yesevaone/YesevaOne-Regular.ttf');
+	}
+
+	header {
+		background-color: #1B6453;
+		width: 1000px;
+		height: 50px;
+		padding: 5px;
+	}
+
+	header img {
+		width: 50px;
+		height: 50px;
+		display: inline;
+	}
+
+	.section h1 {
+		margin: 0;
+		padding: 75px 0 0 55px;
+		color: white;
+		text-shadow: 2px 2px #000;	
+	}
+
+	.column h3 {
+		font-family: 'Crimson Text';
+	}
+
+	h4 {
+  		font-family: 'Crimson Text' ;
+	}
+
+	h1 + h3 {
+		color: white;
+		text-shadow: 2px 2px #000;
+		padding: 0px 0 0 55px;
+		font-family: 'Yeseva One'
+	}
+
+	h2 + p {
+		padding: 10px;
+	}
+
+	a {
+		display: inline;
+		font-size: 10px;
+		font-family: 'Crimson Text';
+	}
+
+	.first a {
+		color: white;
+		font-size: 10px;
+		font-family: Arial, sans-serif;
+		text-decoration: none;
+	}
+
+	p {
+		font-family: 'Crimson Text';
+		font-size: 10px;
+		color: #252525;
+	}
+
+	h4 > p {
+		text-align: left;
+	}
+
+	header > nav {
+		float: right;
+		padding: 15px;
+	}
+
+	nav .first {
+		display: inline;
+		list-style-type: none;
+		font-family: Arial, sans-serif;
+		font-size: .75em;
+	}
+
+	.section {
+		width: 1010px;
+		height: 230px;
+		background-color: #a9a9a9;
+		background-image: url('assets/images/hero.jpg');
+		margin-bottom: 50px; 
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.4;
+    	filter: alpha(opacity=10);
+	}
+
+	.first li {
+		display: inline;
+		padding: 10px;
+	}
+
+	.column {
+		width: 600px;
+		height: 540px;
+		float: left;
+		margin-left: 100px;
+		margin right: 20px;
+		border-right: 1px #d3d3d3 solid;
+	}
+
+	.column p {
+		margin-right: 20px;
+	}
+
+	.three {
+		background-color: #d3d3d3;
+		margin-right: 20px;
+	}
+
+
+	blockquote {
+		color: gray;
+		font-style: italic;
+		font-size: 1.5em;
+		margin-left: 50px;
+		padding: 10px;
+		font-family: cursive;
+	}
+
+	aside {
+		width: 200px;
+		height: 600px;
+		float: left;
+		margin-left: 20px;
+		color: #252525;
+	}
+
+	aside > h5 {
+		font-family: 'Crimson Text';
+	}
+
+	.column1, 
+	.column2,
+	.column3 {
+		float: left;
+		width: 150px;
+		height: 290px;
+		background-color: #d3d3d3;
+		text-align: left;
+		line-height: 1em;
+		padding: 20px;
+	}
+
+	.lines a {
+		text-decoration:underline;
+	}
+
+	footer {
+		background-color: #eee;
+		width: 1000px;
+		height: 25px;
+		padding: 5px;
+		display: inline-block;
+		margin-top: 40px;
+		display: inline-block;
+	}
+
+	nav > .last {
+		float: left;
+		margin-top: -1px;
+		list-style-type: none;
+	}
+
+	.last a {
+		color: #d3d3d3;
+		float: left;
+	}
+
+	.last li {
+		float: left;
+		padding: 10px;
+	}
+
+	.last ul {
+		padding: 0;
+		margin: 0;
+		float: left;
+		height: 15px;
+	}
+
+	small {
+		float: left;
+		font-family: sans-serif;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="assets/images/spices.svg">
+		<nav>
+			<ul class="first">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="section">
+		<h1>Spice Source</h1>
+		<h3>Bringing local and imported spices straight to your doorstep</h3>
+	</div>
+	<main>
+		<div class="column">
+			<h3>Heading 2</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et <a href="#">dolore magna aliqua</a>. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+			<blockquote>"We supply the best spices for the best prices."</blockquote>
+			<div class="three">
+				<div class="column1">
+					<h4>Heading 3</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+				<div class="column2">	
+					<h4>Heading 3</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+				<div class="column2">
+					<h4>Heading 3</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+				</div>
+			</div>
+		</div>
+		<aside>
+			<h5>Box Title</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.
+			</p>
+			<h5>Box Title</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>	
+			<ul class="lines">	
+				<li>
+					<a href="#">Lorem</a>
+				</li>
+				<li>
+					<a href="#">Ipsum Dolor</a>
+				</li>
+				<li>
+					<a href="#">Sit Amet</a>
+				</li>
+				<li>
+					<a href="#">Consectetur Adipisicing</a>
+				</li>
+			</ul>
+		</aside>
+	</main>
+	<footer>
+	<small>&copy Spice Source 2014-2016</small>
+	<nav>
+		<ul class="last">
+			<li>
+				<a href="#">Terms</a>
+			</li>
+			<li>
+				<a href="#">Privacy</a>
+			</li>
+		</ul>
+	</nav>	
+</footer>
+</body>
+</html>

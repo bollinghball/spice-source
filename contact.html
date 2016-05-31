@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<style type="text/css">
+
+	@font-face {
+  		font-family: 'Crimson Text';
+  		src: url('assets/fonts/crimsontext/CrimsonText-Regular.ttf');
+	}
+
+	@font-face {
+  		font-family: 'Yeseva One';
+  		src: url('assets/fonts/yesevaone/YesevaOne-Regular.ttf');
+	}
+
+	header {
+		background-color: #1B6453;
+		width: 1000px;
+		height: 50px;
+		padding: 5px;
+	}
+
+	header img {
+		width: 50px;
+		height: 50px;
+		display: inline;
+	}
+
+	a {
+		display: inline;
+		font-size: 10px;
+		font-family: Georgia, serif;
+	}
+
+	.first a {
+		color: white;
+		font-size: 10px;
+		font-family: Arial, sans-serif;
+		text-decoration: none;
+	}
+
+	header > nav {
+		float: right;
+		padding: 15px;
+	}
+
+	nav .first {
+		display: inline;
+		list-style-type: none;
+		font-family: Arial, sans-serif;
+		font-size: .75em;
+	}
+
+	.first li {
+		display: inline;
+		padding: 10px;
+	}
+
+	h2 {
+		padding: 20px;
+		border-bottom: 1px #d3d3d3 solid;
+		margin-left: 100px;
+		margin-right: 50px;
+		width: 750px;
+		font-family: 'Yeseva One';
+	}
+
+	label {
+		display: block;
+		padding: 10px;
+	}
+
+	section > p {
+		margin-left: 100px;
+		width: 800px;
+		font-size: 10px;
+		font-family:'Crimson Text';
+	}
+
+	input { 
+		width: 200px;
+		height: 20px;
+	}
+
+	textarea {
+		width:750px;
+		height: 75px;
+		float: left;
+	}
+
+	.name {
+		/*padding: 20px;*/
+		margin-left: 120px;
+		float: left;
+		margin-right: 180px;
+		font-family: sans-serif;
+		font-size: 14px;
+	}
+
+	.last-name {
+		font-family: sans-serif;
+		font-size: 14px;
+	}
+
+	.email {
+		padding: 20px;
+		display: block;
+		font-family: sans-serif;
+		margin-left: 100px;
+		font-size: 14px;
+	}
+
+	.message {
+		font-family: sans-serif;
+		float: left;
+		margin-left: 120px;
+		font-size: 14px;
+	}
+
+	.contact {
+		font-family: sans-serif;
+		float: left;
+		margin-left: 110px;
+		font-size: 14px;
+	}
+
+	input #contact {
+		display: block;
+	}
+
+	.submit {
+		font-family: sans-serif;
+		display: block;
+		width: 50px;
+		margin-left: 120px;
+	}
+
+	#Submit {
+		width: 50px;
+	}
+
+	footer {
+		background-color: #eee;
+		width: 1000px;
+		height: 25px;
+		padding: 5px;
+		margin-top: 40px;
+	}
+
+	nav > .last {
+		float: left;
+		list-style-type: none;
+		margin-top: -1px;
+	}
+
+	.last a {
+		float: left;
+		color: #d3d3d3;
+	}
+
+	.last li {
+		padding: 10px;
+		float: left;
+	}
+
+	.last ul {
+		padding: 0;
+		margin: 0;
+		float: left;
+		height: 15px;
+	}
+
+	small {
+		float: left;
+		font-family: sans-serif;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	</style>
+</head>
+<body>
+<header>
+	<img src="assets/images/spices.svg">
+	<nav>
+		<ul class="first">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<h2>Spice Source</h2>
+<section>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+<form method="POST" action="http://google.com">	
+<div class="name">
+		<label for="First-Name">First Name</label>
+		<input id="First-Name" type="text" name="First-Name">
+</div>
+<div class="last-name">
+	<label for="Last-Name">Last Name</label>
+	<input id="Last-Name" type="text" name="Last-Name">
+</div>
+<div class="email">
+	<label for="Email">Email</label>
+	<input id="Email" type="text" name="Email">
+</div>
+<div class="message">
+	<p>Send us a message:</p>
+	<textarea></textarea>
+</div>
+<div class="contact">
+	<label for="Contact">Contact me about special offers.<input id="Contact" type="checkbox" value="Contact"></label>
+	
+</div>
+<div class="submit">
+	<div>
+		<label for="Submit"></label>
+		<input id="Submit" type="submit" value="Submit">
+	</div>
+</div>
+</form>
+<footer>
+	<small>&copy Spice Source 2014 - 2016</small>
+	<nav>
+		<ul class="last">
+			<li>
+				<a href="#">Terms</a>
+			</li>
+			<li>
+				<a href="#">Privacy</a>
+			</li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>

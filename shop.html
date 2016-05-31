@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+	<style type="text/css">
+	
+	@font-face {
+  		font-family: 'Crimson Text';
+  		src: url('assets/fonts/crimsontext/CrimsonText-Regular.ttf');
+	}
+
+	@font-face {
+  		font-family: 'Yeseva One';
+  		src: url('assets/fonts/yesevaone/YesevaOne-Regular.ttf');
+	}
+
+	header {
+		background-color: #1B6453;
+		width: 1000px;
+		height: 50px;
+		padding: 5px;
+	}
+
+	header img {
+		width: 50px;
+		height: 50px;
+		display: inline;
+	}
+
+	a {
+		display: inline;
+		font-size: 10px;
+		font-family: Georgia, serif;
+	}
+
+	.first a {
+		color: white;
+		font-size: 10px;
+		font-family: Arial, sans-serif;
+		text-decoration: none;
+	}
+	
+	header > nav {
+		float: right;
+		padding: 15px;
+	}
+
+	nav .first {
+		display: inline;
+		list-style-type: none;
+		font-family: Arial, sans-serif;
+		font-size: .75em;
+	}
+
+	.first li {
+		display: inline;
+		padding: 10px;
+	}
+
+	h3 {
+		padding: 20px;
+		border-bottom: 1px #d3d3d3 solid;
+		margin-left: 100px;
+		margin-right: 50px;
+		width: 750px;
+		font-family: 'Yeseva One';
+	}
+
+	section {
+		background-color: #eee;
+		height: 50px;
+		width: 800px;
+		margin-left: 100px;
+	}
+	
+	section p {
+		float: left;
+		margin-left: 10px;
+		font-family: 'Crimson Text';
+	}
+
+	a + img {
+		width: 20px;
+		height: 20px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;	
+	}
+
+	section > a {
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+		color: #551A8B;
+	}
+
+	main {
+		width: 850px;
+		margin-left: 145px;
+	}
+
+	.boxes {
+		background-color: #eee;
+		width: 225px;
+		height: 160px;
+		float: left;
+		margin-top: 20px;
+		margin-right: 30px;
+		padding-bottom: 30px;
+	}
+
+	.boxes img {
+		width: 205px;
+		height: 140px;
+		padding: 10px;
+		float: left;
+	}
+
+	.boxes #cart {
+		margin-right: 10px;
+		float: right;
+		font-family: 'Crimson Text';
+		color: #551A8B;
+	}
+
+	.spice-price {
+		margin-top: 1px;
+    	margin-left: 10px;
+		font-family: 'Crimson Text';
+		font-size: 11px;
+		float: left;
+	}
+
+	footer {
+		background-color: #eee;
+		width: 1000px;
+		height: 25px;
+		padding: 5px;
+		margin-top: 40px;
+		display: inline-block;
+
+	}
+
+	nav > .last {
+		float: left;
+		list-style-type: none;
+		margin-top: -1px;
+	}
+
+	.last a {
+		display: inline-block;
+		color: #d3d3d3;
+		float: left;
+	}
+
+	.last li {
+		display: inline-block;
+		padding: 10px;
+		float: left;
+	}
+
+	.last ul {
+		padding: 0;
+		margin: 0;
+		float: left;
+		height: 15px;
+	}
+
+	small {
+		float: left;
+		font-family: sans-serif;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<img src="assets/images/spices.svg">
+	<nav>
+		<ul class="first">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="shop.html">Shop</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<h3>Spice Source</h3>
+<section>
+	<p>Shop</p>
+	<a href="#">0 item(s) in your cart</a>
+	<img src="assets/images/cart.svg">
+</section>
+<main>
+	<div class="boxes">
+		<img src="assets/images/shop-item.jpg">
+		<div class="price">
+			<p class="spice-price">Spice  &middot;  $1.50</p>
+			<a id="cart" href="#">Add to cart</a>
+		</div>
+	</div>
+	<div class="boxes">
+		<img src="assets/images/shop-item.jpg">
+		<div class="price">
+			<p class="spice-price">Spice  &middot;  $1.50</p>
+			<a id="cart" href="#">Add to cart</a>
+		</div>
+	</div>
+	<div class="boxes">
+		<img src="assets/images/shop-item.jpg">
+		<div class="price">
+			<p class="spice-price">Spice  &middot;  $1.50</p>
+			<a id="cart" href="#">Add to cart</a>
+		</div>
+	</div>
+	<div class="boxes">
+		<img src="assets/images/shop-item.jpg">
+		<div class="price">
+			<p class="spice-price">Spice  &middot;  $1.50</p>
+			<a id="cart" href="#">Add to cart</a>
+		</div>
+	</div>
+	<div class="boxes">
+		<img src="assets/images/shop-item.jpg">
+		<div class="price">
+			<p class="spice-price">Spice  &middot;  $1.50</p>
+			<a id="cart" href="#">Add to cart</a>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+</main>
+<footer>
+	<small>&copy Spice Source 2014 - 2016</small>
+	<nav>
+		<ul class="last">
+			<li>
+				<a href="#">Terms</a>
+			</li>
+			<li>
+				<a href="#">Privacy</a>
+			</li>
+		</ul>
+	</nav>	
+</footer>
+</body>
+</html>
