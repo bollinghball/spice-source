@@ -15,9 +15,10 @@
 
 	header {
 		background-color: #1B6453;
-		width: 1000px;
-		height: 50px;
+/*		width: 1000px;
+		height: 50px;*/
 		padding: 5px;
+		box-sizing: border-box;
 	}
 
 	header img {
@@ -60,13 +61,23 @@
 	header + h3 {
 		padding: 20px;
 		border-bottom: 1px #d3d3d3 solid;
-		margin-left: 100px;
-		margin-right: 50px;
-		width: 750px;
+		/*margin-left: 100px;
+		margin-right: 50px;*/
+		width: 80%;
+		box-sizing: border-box;
+		margin: 0 auto;
+		max-width: 1000px;
 	}
 
 	main > h3 {
 		font-family: 'Crimson Text';
+		margin-left: 50px;
+	}
+
+	article {
+		box-sizing: border-box;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	p:first-of-type {
@@ -86,25 +97,37 @@
 		height:200px;
 	}
 
-	main {
+	/*main {
 		margin-left: 100px;
 		width: 750px;
+	}*/
+
+		main {
+		box-sizing: border-box;
+		width: 60%
+		margin: 0 auto;
+		max-width:950px;
+		margin-left: 100px;
 	}
 
 	footer {
 		background-color: #eee;
-		width: 1000px;
-		height: 25px;
+	/*	width: 1000px;
+		height: 25px;*/
 		padding: 5px;
 		margin-top: 40px;
 		display: inline-block;
+		box-sizing: border-box;
+		width: 100%;
 
 	}
 
 	nav > .last {
 		float: left;
 		list-style-type: none;
-		margin-top: -1px;
+		margin-top: 1px;
+		margin-bottom: 0;
+
 	}
 
 	.last a {
@@ -128,8 +151,16 @@
 		float: left;
 		font-family: sans-serif;
 		font-size: 10px;
-		margin-top: 5px;
-		margin-left: 5px;
+		box-sizing: border-box;
+		padding: 10px;
+/*		margin-top: 5px;
+		margin-left: 5px;*/
+	}
+
+	.cf:after {
+		content: "";
+		display: block;
+		clear: both;
 	}
 	</style>
 </head>
