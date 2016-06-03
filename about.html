@@ -1,168 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About</title>
-	<style type="text/css">
-	@font-face {
-  		font-family: 'Crimson Text';
-  		src: url('assets/fonts/crimsontext/CrimsonText-Regular.ttf');
-	}
-
-	@font-face {
-  		font-family: 'Yeseva One';
-  		src: url('assets/fonts/yesevaone/YesevaOne-Regular.ttf');
-	}
-
-	header {
-		background-color: #1B6453;
-/*		width: 1000px;
-		height: 50px;*/
-		padding: 5px;
-		box-sizing: border-box;
-	}
-
-	header img {
-		width: 50px;
-		height: 50px;
-		display: inline;
-
-	}
-
-	a {
-		display: inline;
-		font-size: 10px;
-		font-family: Georgia, serif;
-
-	}
-
-	.first a {
-		color: white;
-		font-size: 10px;
-		font-family: Arial, sans-serif;
-		text-decoration: none;
-	}
-
-	header > nav {
-		float: right;
-		padding: 15px;
-	}
-
-	nav .first {
-		display: inline;
-		list-style-type: none;
-		font-family: Arial, sans-serif;
-		font-size: .75em;
-	}
-	.first li {
-		display: inline;
-		padding: 10px;
-	}
-
-	header + h3 {
-		padding: 20px;
-		border-bottom: 1px #d3d3d3 solid;
-		/*margin-left: 100px;
-		margin-right: 50px;*/
-		width: 80%;
-		box-sizing: border-box;
-		margin: 0 auto;
-		max-width: 1000px;
-	}
-
-	main > h3 {
-		font-family: 'Crimson Text';
-		margin-left: 50px;
-	}
-
-	article {
-		box-sizing: border-box;
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	p:first-of-type {
-		font-size: 14px;
-		font-family:'Crimson Text';
-	}
-
-	p {
-		font-size:11px;
-		font-family:'Crimson Text';
-	}
-
-	h3 + img {
-		float: right;
-		border-left: 1px #d3d3d3 solid;
-		width: 300px;
-		height:200px;
-	}
-
-	/*main {
-		margin-left: 100px;
-		width: 750px;
-	}*/
-
-		main {
-		box-sizing: border-box;
-		width: 60%
-		margin: 0 auto;
-		max-width:950px;
-		margin-left: 100px;
-	}
-
-	footer {
-		background-color: #eee;
-	/*	width: 1000px;
-		height: 25px;*/
-		padding: 5px;
-		margin-top: 40px;
-		display: inline-block;
-		box-sizing: border-box;
-		width: 100%;
-
-	}
-
-	nav > .last {
-		float: left;
-		list-style-type: none;
-		margin-top: 1px;
-		margin-bottom: 0;
-
-	}
-
-	.last a {
-		float: left;
-		color: #d3d3d3;
-	}
-
-	.last li {
-		float: left;
-		padding: 10px;
-	}
-
-	.last ul {
-		padding: 0;
-		margin: 0;
-		float: left;
-		height: 15px;
-	}
-
-	small {
-		float: left;
-		font-family: sans-serif;
-		font-size: 10px;
-		box-sizing: border-box;
-		padding: 10px;
-/*		margin-top: 5px;
-		margin-left: 5px;*/
-	}
-
-	.cf:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
@@ -186,9 +29,9 @@
 </header>
 <h3>Spice Source</h3>
 <main>
-	<h3>Our Story</h3>
-	<img src="assets/images/spice-map.png">
+	<img class="maps" src="assets/images/spice-map.png">
 	<article>
+		<h3>Our Story</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

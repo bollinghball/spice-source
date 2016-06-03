@@ -1,210 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Shop</title>
-	<style type="text/css">
-	
-	@font-face {
-  		font-family: 'Crimson Text';
-  		src: url('assets/fonts/crimsontext/CrimsonText-Regular.ttf');
-	}
-
-	@font-face {
-  		font-family: 'Yeseva One';
-  		src: url('assets/fonts/yesevaone/YesevaOne-Regular.ttf');
-	}
-
-	header {
-		background-color: #1B6453;
-/*		max-width: 1000px;*/
-		/*height: 50px;*/
-		padding: 5px;
-		box-sizing: border-box;
-	}
-
-	header img {
-		width: 50px;
-		height: 50px;
-		display: inline;
-	}
-
-	a {
-		display: inline;
-		font-size: 10px;
-		font-family: Georgia, serif;
-	}
-
-	.first a {
-		color: white;
-		font-size: 10px;
-		font-family: Arial, sans-serif;
-		text-decoration: none;
-	}
-	
-	header > nav {
-		float: right;
-		padding: 15px;
-	}
-
-	nav .first {
-		display: inline;
-		list-style-type: none;
-		font-family: Arial, sans-serif;
-		font-size: .75em;
-	}
-
-	.first li {
-		display: inline;
-		padding: 10px;
-	}
-
-	h3 {
-		padding: 20px;
-		border-bottom: 1px #d3d3d3 solid;
-	/*	margin-left: 100px;
-		margin-right: 50px;*/
-		/*width: 750px;*/
-		margin: 0 auto;
-		margin left: 0;
-		max-width: 750px;
-		font-family: 'Yeseva One';
-	}
-
-	section {
-		background-color: #eee;
-/*		height: 50px;
-		width: 800px;*/
-		margin-left: 100px;
-		margin-top: 20px;
-		padding: 5px;
-/*		max-width: 800px;*/
-		box-sizing: border-box;
-		width: 80%;
-		display: inline-block;
-	}
-	
-	section p {
-/*		float: left;*/
-		margin-left: 10px;
-/*		margin-bottom: 20px;*/
-		font-family: 'Crimson Text';
-		box-sizing: border-box;
-		width: 80%;
-		display: inline-block;
-	}
-
-	a + img {
-		width: 20px;
-		height: 20px;
-		float: right;
-		margin-right: 20px;
-		margin-top: 20px;	
-/*		margin-bottom: 20px;*/
-	}
-
-	section > a {
-		float: right;
-		margin-top: 20px;
-		margin-right: 10px;
-/*		margin-bottom: 20px;*/
-		color: #551A8B;
-	}
-
-	main {
-		margin: 0 auto;
-		margin-left: 85px;
-	}
-
-	.boxes {
-		background-color: #eee;
-		width: 24%;
-/*		height: 160px;*/
-		float: left;
-		margin-left: 30px;
-		margin-top: 20px;
-/*		margin-right: 10px;*/
-		padding-bottom: 30px;
-		box-sizing: border-box;
-	}
-
-	.boxes img {
-		width: 205px;
-		height: 140px;
-		padding: 10px;
-		float: left;
-/*		margin-left: 10px;*/
-/*		margin: 0 auto;
-*/
-	}
-
-	.boxes #cart {
-		margin-right: 10px;
-		float: right;
-		font-family: 'Crimson Text';
-		color: #551A8B;
-	}
-
-	.spice-price {
-		margin-top: 1px;
-    	margin-left: 10px;
-		font-family: 'Crimson Text';
-		font-size: 11px;
-		float: left;
-	}
-
-	footer {
-		background-color: #eee;
-/*		width: 1000px;
-		height: 25px;*/
-		padding: 5px;
-		margin-top: 40px;
-		display: inline-block;
-		box-sizing: border-box;
-		width:100%;
-	}
-
-	nav > .last {
-		float: left;
-		list-style-type: none;
-		margin-top: 1px;
-		margin-bottom: 0;
-	}
-
-	.last a {
-/*		display: inline-block;
-*/		color: #d3d3d3;
-		float: left;
-	}
-
-	.last li {
-/*		display: inline-block;
-*/		padding: 10px;
-		float: left;
-	}
-
-	.last ul {
-		padding: 0;
-		margin: 0;
-		float: left;
-		height: 15px;
-	}
-
-	small {
-		float: left;
-		font-family: sans-serif;
-		font-size: 10px;
-		box-sizing: border-box;
-		padding: 10px;
-/*		margin-top: 10px;
-		margin-left: 5px;*/
-	}
-
-	.cf:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-	</style>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
@@ -227,45 +28,57 @@
 	</nav>
 </header>
 <h3>Spice Source</h3>
-<section>
+<section class="shop">
 	<p>Shop</p>
 	<a href="#">0 item(s) in your cart</a>
 	<img src="assets/images/cart.svg">
 </section>
 <main>
 	<div class="boxes">
-		<img src="assets/images/shop-item.jpg">
-		<div class="price">
-			<p class="spice-price">Spice  &middot;  $1.50</p>
-			<a id="cart" href="#">Add to cart</a>
+		<div class="master-box">
+			<div class="box">
+				<img src="assets/images/shop-item.jpg">
+				<div class="price">
+					<p class="spice-price">Spice  &middot;  $1.50</p>
+					<a id="cart" href="#">Add to cart</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="boxes">
-		<img src="assets/images/shop-item.jpg">
-		<div class="price">
-			<p class="spice-price">Spice  &middot;  $1.50</p>
-			<a id="cart" href="#">Add to cart</a>
+		<div class="master-box">
+			<div class="box">
+				<img src="assets/images/shop-item.jpg">
+				<div class="price">
+					<p class="spice-price">Spice  &middot;  $1.50</p>
+					<a id="cart" href="#">Add to cart</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="boxes">
-		<img src="assets/images/shop-item.jpg">
-		<div class="price">
-			<p class="spice-price">Spice  &middot;  $1.50</p>
-			<a id="cart" href="#">Add to cart</a>
+		<div class="master-box">
+			<div class="box">
+				<img src="assets/images/shop-item.jpg">
+				<div class="price">
+					<p class="spice-price">Spice  &middot;  $1.50</p>
+					<a id="cart" href="#">Add to cart</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="boxes">
-		<img src="assets/images/shop-item.jpg">
-		<div class="price">
-			<p class="spice-price">Spice  &middot;  $1.50</p>
-			<a id="cart" href="#">Add to cart</a>
+		<div class="master-box">
+			<div class="box">
+				<img src="assets/images/shop-item.jpg">
+				<div class="price">
+					<p class="spice-price">Spice  &middot;  $1.50</p>
+					<a id="cart" href="#">Add to cart</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="boxes">
-		<img src="assets/images/shop-item.jpg">
-		<div class="price">
-			<p class="spice-price">Spice  &middot;  $1.50</p>
-			<a id="cart" href="#">Add to cart</a>
+		<div class="master-box">
+			<div class="box">
+				<img src="assets/images/shop-item.jpg">
+				<div class="price">
+					<p class="spice-price">Spice  &middot;  $1.50</p>
+					<a id="cart" href="#">Add to cart</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </main>
